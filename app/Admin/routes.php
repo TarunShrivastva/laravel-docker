@@ -13,3 +13,6 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('admin.home');
 
 });
+
+
+Route::get('email', 'EmailController@sendEmail');
